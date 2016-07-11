@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>min</key>
+	<dict>
+		<key>cell_labelText</key>
+		<integer>14</integer>
+		<key>cell_detailLabel</key>
+		<integer>13</integer>
+	</dict>
+	<key>middle</key>
+	<dict>
+		<key>cell_labelText</key>
+		<integer>15</integer>
+		<key>cell_detailLabel</key>
+		<integer>14</integer>
+	</dict>
+	<key>max</key>
+	<dict>
+		<key>cell_labelText</key>
+		<integer>16</integer>
+		<key>cell_detailLabel</key>
+		<integer>15</integer>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,141 @@
+//
+//  PrefixHeader.pch
+//  DeliveryPoint
+//
+//  Created by kaki on 16/7/4.
+//  Copyright © 2016年 liudhkk. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "KKConst.h"
+#import "KKFont.h"
+#import "UIView+KKExtension.h"
+#import "NSString+KKDayNight.h"
+#import "KKDayNightData.h"
+#import "UIColor+KKDayNight.h"
+#import "UIFont+KKExtension.h"
+
+/*****************************************************************
+ tag 使用
+ liudh: 1001~1100
+ 已用    1001 1050~1100
+ 
+ liyj : 1101~1200
+ 
+ zhouy: 1201~1300
+ 
+ liuzb: 1301~1400
+ *****************************************************************/
+
+
+
+// 沙盒里font 对应的key
+#define KKFontKey @"DeliveryPointFontSettingKey"
+
+// 全局白天day颜色
+#define KKGlobalbgColor KKRGBColor(223, 223, 223)
+
+#ifdef DEBUG
+#define KKLog(...) NSLog(__VA_ARGS__)
+#else
+#define KKLog(...)
+#endif
+
+/*****************************************************************/
+/**
+ *  @author liudhkk, 16-07-06 14:07:37
+ *
+ *  MainStram模块 设置
+ */
+
+
+/** tabBar title的大小 **/
+#define KKMSTabBarFontSize 13
+
+
+/** 主框架字典key值 **/
+#define mainStream @"mainStream"
+#define homePage @"homePage"
+#define discover @"discover"
+#define me @"me"
+
+// 从pilist文件取出对应的字符串 仅支持两级
+#define KKStringWithRootkeyStringKey(rootKey, stringKey) [NSString kk_stringWithKey:rootKey :stringKey]
+
+// 从pilist文件取出 单个 对应的字符串 并转换成颜色对象 仅支持两级
+#define KKSingelColorWithRootColorKey(rootKey, colorKey) [UIColor kk_colorWithKey:rootKey :colorKey]
+
+// 从plist文件取出对应 key 的字符串，包括白天与夜间，并转换成颜色对象，最后使用第三方框架封装返回
+// 仅支持两级
+#define KKColorWithRootkeyColorKey(rootKey, colorKey) DKColorPickerWithColors([UIColor kk_colorWithKey:rootKey :colorKey], [UIColor kk_colorWithKey:rootKey :[colorKey stringByAppendingString:@"_night"]])
+
+// 仅支持两级
+// 第三方框架设置button的title颜色时使用
+// 从plist文件取出对应key的白天与夜间 颜色字符串，转成颜色对象，并根据白天或夜间返回对应的 颜色对象
+#define KKButtonTitleColorForThemeVersion(rootKey, colorKey) \
+if ([themeVersion isEqualToString:DKThemeVersionNormal]) {\
+return KKSingelColorWithRootColorKey(rootKey, colorKey);\
+} else {\
+return KKSingelColorWithRootColorKey(rootKey, [colorKey stringByAppendingString:@"_night"]);\
+}
+
+/*****************************************************************/
+
+
+/*****************************************************************/
+/**
+ *  @author liudhkk, 16-07-06 14:07:37
+ *
+ *  homePage模块 设置
+ */
+
+/** 首页 - 首页 **/
+// 首页 title 字体大小
+#define KKHomeTitleFontSize 30
+// 标签字体大小
+#define KKHPTagsFontSize 18
+
+// 应用首次获取标签数据成功后,通知刷新标签key值
+#define KKHomePageTagReloadDataMessage  @"KKHomePageTagReloadDataMessage"
+
+// 标签 - 宽度
+#define KKHomePageTagsWidth 75
+// 标签 - 高度
+#define KKHomePageTagsHeight 25
+// 标签 - 间距 
+#define KKHomePageTagsMargin 8
+// 标签栏 - 高度
+#define KKHomePageTagsBarHeight (KKHomePageTagsHeight + 10)
+// 标签栏 与 导航栏间距
+#define KKHomePageTagsToNavMargin 5
+// 标签栏最后的+号
+#define KKHomePageLastTag @"[ + ]"
+#define KKHomePageLastTagWidth 50
+
+/*****************************************************************/
+
+
+/*****************************************************************/
+/**
+ *  @author liudhkk, 16-07-06 14:07:37
+ *
+ *  discover模块 设置
+ */
+
+
+/*****************************************************************/
+
+
+/*****************************************************************/
+/**
+ *  @author liudhkk, 16-07-06 14:07:37
+ *
+ *  me模块 设置
+ */
+
+/*****************************************************************/
+
+
+#endif /* PrefixHeader_pch */

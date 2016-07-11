@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="collectionCellID" id="iN0-l3-epB" customClass="KKHPNewsInfoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="141" height="67"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQz-GL-tCe">
+                    <rect key="frame" x="0.0" y="0.0" width="141" height="67"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nQz-GL-tCe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2bg-lA-75y"/>
+                <constraint firstAttribute="bottom" secondItem="nQz-GL-tCe" secondAttribute="bottom" id="9Ja-hD-dov"/>
+                <constraint firstItem="nQz-GL-tCe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FPd-el-NCT"/>
+                <constraint firstAttribute="trailing" secondItem="nQz-GL-tCe" secondAttribute="trailing" id="Z84-RE-SdU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="nQz-GL-tCe" id="d4W-Xf-i5e"/>
+            </connections>
+            <point key="canvasLocation" x="140.5" y="7.5"/>
+        </view>
+    </objects>
+</document>
