@@ -13,6 +13,8 @@ static NSString *KID = @"KID";
 static NSString *KName = @"KName";
 static NSString *KTitle = @"KTitle";
 static NSString *KKeywords = @"KKeywords";
+static NSString *KType = @"KType";
+static NSString *KSection= @"KSection";
 
 @implementation KKHPTagsModel 
 
@@ -37,6 +39,8 @@ static NSString *KKeywords = @"KKeywords";
     [aCoder encodeObject:self.name forKey:KName];
     [aCoder encodeObject:self.title forKey:KTitle];
     [aCoder encodeObject:self.keywords forKey:KKeywords];
+    [aCoder encodeObject:self.type forKey:KType];
+    [aCoder encodeObject:self.section forKey:KSection];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
@@ -44,6 +48,8 @@ static NSString *KKeywords = @"KKeywords";
     self.name = [aDecoder decodeObjectForKey:KName];
     self.title = [aDecoder decodeObjectForKey:KTitle];
     self.keywords = [aDecoder decodeObjectForKey:KKeywords];
+    self.type = [aDecoder decodeObjectForKey:KType];
+    self.section = [aDecoder decodeObjectForKey:KSection];
     return self;
 }
 

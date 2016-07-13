@@ -6,8 +6,8 @@
 //  Copyright © 2016年 liudhkk. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "KKCustomVC.h"
 
-@interface KKDiscoveryViewController : UIViewController
+@interface KKDiscoveryViewController : KKCustomVC
 
 @end

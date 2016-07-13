@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,15 +49,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0171134A66A6F2439C9A803963670745</key>
+		<key>3BE7E2CD75FD01B451CE006997CFC217</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>063EFE0E3621571DD24F865FA8C91F15</key>
+		<key>3DF800AD12BABB645D1D0B857332B92D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4F48F5A072D503F6AE214237EA7E212F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,22 +77,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>628792FFCC1EBE02EDC0C8B1F0D2E2AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6331E017407E0253AC3E3E4A7C394E65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>633D872DB68AAEA4D3273A8DDE4A1CC6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BFE2EF92AE34347975E203B596BD6B9</key>
+		<key>70BC44266C6FFE30D2C57129458E070B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9643ED01450BDE836E38E36609F548B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

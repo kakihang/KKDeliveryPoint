@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.dk_backgroundColorPicker = KKColorWithRootkeyColorKey(me, @"viewBgColorDefault");
+    
     
     /** 设置一个测试用的夜间模式按钮 **/
     [self setupSwitch];

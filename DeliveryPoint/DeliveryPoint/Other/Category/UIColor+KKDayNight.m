@@ -13,10 +13,10 @@
 @implementation UIColor (KKDayNight)
 + (instancetype)kk_setRedBlueGreenAlphaColor:(NSString *)redBlueGreenAlpha {
     NSArray *all = [redBlueGreenAlpha componentsSeparatedByString:@","];
-    if (all.count != 4) {
+    if (all.count < 4) {
         all = [redBlueGreenAlpha componentsSeparatedByString:@"，"];
     }
-    if (all.count != 4) {
+    if (all.count < 4) {
         NSLog(@"error:color params is illegal");
         NSLog(@"error:(NSString *) redBlueGreenAlpha = \"%@\"", redBlueGreenAlpha);
         return nil;

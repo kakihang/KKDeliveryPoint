@@ -30,10 +30,6 @@
         KKButtonTitleColorForThemeVersion(homePage, @"homeTagSelectColor");
     } forState:UIControlStateSelected];
     
-    //    [button dk_setTitleColorPicker:^UIColor *(DKThemeVersion *themeVersion) {
-    //        KKButtonTitleColorForThemeVersion(homePage, @"homeTagSelectColor");
-    //    } forState:UIControlStateFocused];
-    
     return button;
     
 }

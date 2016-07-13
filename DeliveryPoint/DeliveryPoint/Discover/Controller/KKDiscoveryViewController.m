@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.dk_backgroundColorPicker = KKColorWithRootkeyColorKey(@"discover", @"viewBgColorDefault");
 }
 
 - (void)didReceiveMemoryWarning {

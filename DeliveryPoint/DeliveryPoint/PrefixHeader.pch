@@ -16,6 +16,9 @@
 #import "KKDayNightData.h"
 #import "UIColor+KKDayNight.h"
 #import "UIFont+KKExtension.h"
+#import "NSString+KKStringUrl.h"
+#import "NSDate+KKExtension.h"
+
 
 /*****************************************************************
  tag 使用
@@ -50,6 +53,11 @@
  *  MainStram模块 设置
  */
 
+// 屏幕的全部区域
+#define MAINBOUNDS   [UIScreen mainScreen].bounds
+
+// 导航栏的高度
+#define NAVIGATIONHEIGHT 64
 
 /** tabBar title的大小 **/
 #define KKMSTabBarFontSize 13
@@ -109,7 +117,7 @@ return KKSingelColorWithRootColorKey(rootKey, [colorKey stringByAppendingString:
 // 标签栏 - 高度
 #define KKHomePageTagsBarHeight (KKHomePageTagsHeight + 10)
 // 标签栏 与 导航栏间距
-#define KKHomePageTagsToNavMargin 5
+#define KKHomePageTagsToNavMargin 0
 // 标签栏最后的+号
 #define KKHomePageLastTag @"[ + ]"
 #define KKHomePageLastTagWidth 50

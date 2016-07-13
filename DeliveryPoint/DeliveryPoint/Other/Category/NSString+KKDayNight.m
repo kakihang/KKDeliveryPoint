@@ -11,19 +11,35 @@
 @implementation NSString (KKDayNight)
 
 + (instancetype)kk_stringWithKey:(NSString *)firstKey :(NSString *)secondKey :(NSString *)thirdKey :(NSString *)fourthKey {
-    return [KKDayNightData shareDayNightData][firstKey][secondKey][thirdKey][fourthKey];
+    NSString *string = [KKDayNightData shareDayNightData][firstKey][secondKey][thirdKey][fourthKey];
+    if (string.length == 0) {
+        NSLog(@"error key[%@:%@:%@:%@]", firstKey, secondKey, thirdKey, fourthKey);
+    }
+    return string;
 }
 
 + (instancetype)kk_stringWithKey:(NSString *)firstKey :(NSString *)secondKey :(NSString *)thirdKey {
-    return [KKDayNightData shareDayNightData][firstKey][secondKey][thirdKey];
+    NSString *string = [KKDayNightData shareDayNightData][firstKey][secondKey][thirdKey];
+    if (string.length == 0) {
+        NSLog(@"error key[%@:%@:%@]", firstKey, secondKey, thirdKey);
+    }
+    return string;
 }
 
 + (instancetype)kk_stringWithKey:(NSString *)firstKey :(NSString *)secondKey{
-    return [KKDayNightData shareDayNightData][firstKey][secondKey];
+    NSString *string = [KKDayNightData shareDayNightData][firstKey][secondKey];
+    if (string.length == 0) {
+        NSLog(@"error key[%@:%@]", firstKey, secondKey);
+    }
+    return string;
 }
 
 + (instancetype)kk_stringWithKey:(NSString *)firstKey {
-    return [KKDayNightData shareDayNightData][firstKey];
+    NSString *string = [KKDayNightData shareDayNightData][firstKey];
+    if (string.length == 0) {
+        NSLog(@"error key[%@]", firstKey);
+    }
+    return string;
 }
 
 
@@ -42,5 +58,8 @@
 + (instancetype)kk_fontSizeStringWithKey:(NSString *)firstKey {
     return [KKDayNightData shareDayNightData][firstKey];
 }
+
+
+
 
 @end

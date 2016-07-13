@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		265733331D2E321100783037 /* KKHPTagDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = 265733321D2E321100783037 /* KKHPTagDatas.m */; };
+		2609A5ED1D3474350057BE7B /* NSString+KKStringUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2609A5EC1D3474350057BE7B /* NSString+KKStringUrl.m */; };
+		2609A5F01D3498B50057BE7B /* KKHPTagsManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2609A5EF1D3498B50057BE7B /* KKHPTagsManagerVC.m */; };
+		2609A5F31D34C72F0057BE7B /* KKCustomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2609A5F21D34C72F0057BE7B /* KKCustomVC.m */; };
+		2609A5F71D34C7710057BE7B /* KKCustomNavBarV.m in Sources */ = {isa = PBXBuildFile; fileRef = 2609A5F61D34C7710057BE7B /* KKCustomNavBarV.m */; };
+		261538251D33B88800A6D3E5 /* KKNewsContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 261538241D33B88800A6D3E5 /* KKNewsContentModel.m */; };
+		265733331D2E321100783037 /* KKHPTagGetData.m in Sources */ = {isa = PBXBuildFile; fileRef = 265733321D2E321100783037 /* KKHPTagGetData.m */; };
 		265733371D2E340700783037 /* KKHPTagsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 265733361D2E340700783037 /* KKHPTagsModel.m */; };
 		265733391D2E43A400783037 /* tngou.plist in Resources */ = {isa = PBXBuildFile; fileRef = 265733381D2E43A400783037 /* tngou.plist */; };
 		2657333C1D2E470800783037 /* KKTngouParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 2657333B1D2E470800783037 /* KKTngouParams.m */; };
@@ -18,7 +23,7 @@
 		26627D071D2A7F9E0063D617 /* DeliveryPointTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26627D061D2A7F9E0063D617 /* DeliveryPointTests.m */; };
 		26627D121D2A7F9E0063D617 /* DeliveryPointUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26627D111D2A7F9E0063D617 /* DeliveryPointUITests.m */; };
 		26627D511D2A86D30063D617 /* KKDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26627D371D2A86D30063D617 /* KKDiscoveryViewController.m */; };
-		26627D521D2A86D30063D617 /* KKHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26627D3D1D2A86D30063D617 /* KKHomePageViewController.m */; };
+		26627D521D2A86D30063D617 /* KKHomePageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26627D3D1D2A86D30063D617 /* KKHomePageVC.m */; };
 		26627D541D2A86D30063D617 /* KKMainStreamTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26627D451D2A86D30063D617 /* KKMainStreamTabBarViewController.m */; };
 		26627D5A1D2A87670063D617 /* KKMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26627D591D2A87670063D617 /* KKMeViewController.m */; };
 		26955E6D1D2B6176001F44C9 /* UIColor+KKDayNight.m in Sources */ = {isa = PBXBuildFile; fileRef = 26955E6C1D2B6176001F44C9 /* UIColor+KKDayNight.m */; };
@@ -27,20 +32,23 @@
 		269BE99A1D2B9CA400E145B2 /* KKFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 269BE9991D2B9CA400E145B2 /* KKFont.m */; };
 		269BE99D1D2B9E2F00E145B2 /* KKConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 269BE99C1D2B9E2F00E145B2 /* KKConst.m */; };
 		269BE9A31D2BAA3100E145B2 /* UIFont+KKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 269BE9A21D2BAA3100E145B2 /* UIFont+KKExtension.m */; };
-		269BE9A61D2BDB2400E145B2 /* KKHPNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 269BE9A51D2BDB2400E145B2 /* KKHPNavBar.m */; };
 		269BE9AC1D2BE3E700E145B2 /* UIView+KKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 269BE9AB1D2BE3E700E145B2 /* UIView+KKExtension.m */; };
+		26A7CA021D34D9C800C5675E /* KKNewsInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A7CA011D34D9C800C5675E /* KKNewsInfoViewModel.m */; };
+		26A7CA051D34E28C00C5675E /* NSDate+KKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A7CA041D34E28C00C5675E /* NSDate+KKExtension.m */; };
 		26B29A331D2AB1020015EC34 /* ImageColor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26B29A321D2AB1020015EC34 /* ImageColor.plist */; };
-		26C0F8B01D2E95AA00C87950 /* KKHPTagsLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0F8AF1D2E95AA00C87950 /* KKHPTagsLayout.m */; };
-		26C0F8B31D2E9DF900C87950 /* KKHPNewsInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0F8B21D2E9DF900C87950 /* KKHPNewsInfoViewController.m */; };
-		26C0F8B61D2EABA500C87950 /* KKHPNewsInfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0F8B51D2EABA500C87950 /* KKHPNewsInfoCollectionViewCell.m */; };
-		26C0F8B91D2F58B300C87950 /* KKHPNewsInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0F8B81D2F58B300C87950 /* KKHPNewsInfoTableViewCell.m */; };
+		26C0F8B31D2E9DF900C87950 /* KKHPNewsInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0F8B21D2E9DF900C87950 /* KKHPNewsInfoVC.m */; };
+		26C0F8B91D2F58B300C87950 /* KKHPNewsInfoTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0F8B81D2F58B300C87950 /* KKHPNewsInfoTVCell.m */; };
 		26CC77E51D2CB7A100533D4D /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CC77E41D2CB7A100533D4D /* Test.xib */; };
 		26CC77EB1D2CFDDA00533D4D /* NSString+KKDayNight.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CC77EA1D2CFDDA00533D4D /* NSString+KKDayNight.m */; };
 		26CC77EE1D2D238D00533D4D /* UILabel+KKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CC77ED1D2D238D00533D4D /* UILabel+KKExtension.m */; };
+		26D1B4651D34F2F000F596AD /* KKCustomNavigationC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1B4641D34F2F000F596AD /* KKCustomNavigationC.m */; };
+		26D1B4681D3519CA00F596AD /* KKHPTagViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1B4671D3519CA00F596AD /* KKHPTagViewModel.m */; };
+		26D1B46B1D35429400F596AD /* UIButton+KKHPSearchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1B46A1D35429400F596AD /* UIButton+KKHPSearchButton.m */; };
+		26D1B46E1D3545B500F596AD /* UILabel+KKHPNarTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1B46D1D3545B500F596AD /* UILabel+KKHPNarTitle.m */; };
+		26D1B4711D35D22300F596AD /* UIButton+KKHPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1B4701D35D22300F596AD /* UIButton+KKHPExtension.m */; };
+		26D1B4741D35E1ED00F596AD /* KKHPTagManegerV.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D1B4731D35E1ED00F596AD /* KKHPTagManegerV.m */; };
 		26E3954A1D300E8A0041063E /* KKHPTagsSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E395491D300E8A0041063E /* KKHPTagsSView.m */; };
 		26E3954D1D3011680041063E /* KKHPTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E3954C1D3011680041063E /* KKHPTagButton.m */; };
-		26E3954F1D3085C30041063E /* KKHPNewsInfoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26E3954E1D3085C30041063E /* KKHPNewsInfoCollectionViewCell.xib */; };
-		26E395521D31E0700041063E /* KKHPTagsCV.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E395511D31E0700041063E /* KKHPTagsCV.m */; };
 		8490B864BA92374057C89ACA /* libPods-DeliveryPoint.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2356346FDC8AA3DB3F095CFE /* libPods-DeliveryPoint.a */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +71,19 @@
 
 /* Begin PBXFileReference section */
 		2356346FDC8AA3DB3F095CFE /* libPods-DeliveryPoint.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeliveryPoint.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		265733311D2E321100783037 /* KKHPTagDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagDatas.h; sourceTree = "<group>"; };
-		265733321D2E321100783037 /* KKHPTagDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagDatas.m; sourceTree = "<group>"; };
+		2609A5EB1D3474350057BE7B /* NSString+KKStringUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KKStringUrl.h"; sourceTree = "<group>"; };
+		2609A5EC1D3474350057BE7B /* NSString+KKStringUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KKStringUrl.m"; sourceTree = "<group>"; };
+		2609A5EE1D3498B50057BE7B /* KKHPTagsManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagsManagerVC.h; sourceTree = "<group>"; };
+		2609A5EF1D3498B50057BE7B /* KKHPTagsManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagsManagerVC.m; sourceTree = "<group>"; };
+		2609A5F11D34C72F0057BE7B /* KKCustomVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCustomVC.h; sourceTree = "<group>"; };
+		2609A5F21D34C72F0057BE7B /* KKCustomVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCustomVC.m; sourceTree = "<group>"; };
+		2609A5F41D34C7510057BE7B /* KKCustomVCConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKCustomVCConstants.h; sourceTree = "<group>"; };
+		2609A5F51D34C7710057BE7B /* KKCustomNavBarV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCustomNavBarV.h; sourceTree = "<group>"; };
+		2609A5F61D34C7710057BE7B /* KKCustomNavBarV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCustomNavBarV.m; sourceTree = "<group>"; };
+		261538231D33B88800A6D3E5 /* KKNewsContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNewsContentModel.h; sourceTree = "<group>"; };
+		261538241D33B88800A6D3E5 /* KKNewsContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNewsContentModel.m; sourceTree = "<group>"; };
+		265733311D2E321100783037 /* KKHPTagGetData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagGetData.h; sourceTree = "<group>"; };
+		265733321D2E321100783037 /* KKHPTagGetData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagGetData.m; sourceTree = "<group>"; };
 		265733351D2E340700783037 /* KKHPTagsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagsModel.h; sourceTree = "<group>"; };
 		265733361D2E340700783037 /* KKHPTagsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagsModel.m; sourceTree = "<group>"; };
 		265733381D2E43A400783037 /* tngou.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tngou.plist; sourceTree = "<group>"; };
@@ -85,8 +104,8 @@
 		26627D131D2A7F9E0063D617 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26627D361D2A86D30063D617 /* KKDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDiscoveryViewController.h; sourceTree = "<group>"; };
 		26627D371D2A86D30063D617 /* KKDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDiscoveryViewController.m; sourceTree = "<group>"; };
-		26627D3C1D2A86D30063D617 /* KKHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHomePageViewController.h; sourceTree = "<group>"; };
-		26627D3D1D2A86D30063D617 /* KKHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHomePageViewController.m; sourceTree = "<group>"; };
+		26627D3C1D2A86D30063D617 /* KKHomePageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHomePageVC.h; sourceTree = "<group>"; };
+		26627D3D1D2A86D30063D617 /* KKHomePageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHomePageVC.m; sourceTree = "<group>"; };
 		26627D441D2A86D30063D617 /* KKMainStreamTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMainStreamTabBarViewController.h; sourceTree = "<group>"; };
 		26627D451D2A86D30063D617 /* KKMainStreamTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKMainStreamTabBarViewController.m; sourceTree = "<group>"; };
 		26627D581D2A87670063D617 /* KKMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKMeViewController.h; sourceTree = "<group>"; };
@@ -102,32 +121,39 @@
 		269BE99C1D2B9E2F00E145B2 /* KKConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKConst.m; sourceTree = "<group>"; };
 		269BE9A11D2BAA3100E145B2 /* UIFont+KKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+KKExtension.h"; sourceTree = "<group>"; };
 		269BE9A21D2BAA3100E145B2 /* UIFont+KKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+KKExtension.m"; sourceTree = "<group>"; };
-		269BE9A41D2BDB2400E145B2 /* KKHPNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPNavBar.h; sourceTree = "<group>"; };
-		269BE9A51D2BDB2400E145B2 /* KKHPNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPNavBar.m; sourceTree = "<group>"; };
 		269BE9AA1D2BE3E700E145B2 /* UIView+KKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KKExtension.h"; sourceTree = "<group>"; };
 		269BE9AB1D2BE3E700E145B2 /* UIView+KKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KKExtension.m"; sourceTree = "<group>"; };
+		26A7CA001D34D9C800C5675E /* KKNewsInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKNewsInfoViewModel.h; sourceTree = "<group>"; };
+		26A7CA011D34D9C800C5675E /* KKNewsInfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKNewsInfoViewModel.m; sourceTree = "<group>"; };
+		26A7CA031D34E28C00C5675E /* NSDate+KKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+KKExtension.h"; sourceTree = "<group>"; };
+		26A7CA041D34E28C00C5675E /* NSDate+KKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+KKExtension.m"; sourceTree = "<group>"; };
 		26B29A2E1D2A9ACE0015EC34 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		26B29A321D2AB1020015EC34 /* ImageColor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageColor.plist; sourceTree = "<group>"; };
-		26C0F8AE1D2E95A900C87950 /* KKHPTagsLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagsLayout.h; sourceTree = "<group>"; };
-		26C0F8AF1D2E95AA00C87950 /* KKHPTagsLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagsLayout.m; sourceTree = "<group>"; };
-		26C0F8B11D2E9DF900C87950 /* KKHPNewsInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPNewsInfoViewController.h; sourceTree = "<group>"; };
-		26C0F8B21D2E9DF900C87950 /* KKHPNewsInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPNewsInfoViewController.m; sourceTree = "<group>"; };
-		26C0F8B41D2EABA500C87950 /* KKHPNewsInfoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPNewsInfoCollectionViewCell.h; sourceTree = "<group>"; };
-		26C0F8B51D2EABA500C87950 /* KKHPNewsInfoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPNewsInfoCollectionViewCell.m; sourceTree = "<group>"; };
-		26C0F8B71D2F58B300C87950 /* KKHPNewsInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPNewsInfoTableViewCell.h; sourceTree = "<group>"; };
-		26C0F8B81D2F58B300C87950 /* KKHPNewsInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPNewsInfoTableViewCell.m; sourceTree = "<group>"; };
+		26C0F8B11D2E9DF900C87950 /* KKHPNewsInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPNewsInfoVC.h; sourceTree = "<group>"; };
+		26C0F8B21D2E9DF900C87950 /* KKHPNewsInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPNewsInfoVC.m; sourceTree = "<group>"; };
+		26C0F8B71D2F58B300C87950 /* KKHPNewsInfoTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPNewsInfoTVCell.h; sourceTree = "<group>"; };
+		26C0F8B81D2F58B300C87950 /* KKHPNewsInfoTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPNewsInfoTVCell.m; sourceTree = "<group>"; };
 		26CC77E41D2CB7A100533D4D /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 		26CC77E91D2CFDDA00533D4D /* NSString+KKDayNight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+KKDayNight.h"; sourceTree = "<group>"; };
 		26CC77EA1D2CFDDA00533D4D /* NSString+KKDayNight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+KKDayNight.m"; sourceTree = "<group>"; };
 		26CC77EC1D2D238D00533D4D /* UILabel+KKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+KKExtension.h"; sourceTree = "<group>"; };
 		26CC77ED1D2D238D00533D4D /* UILabel+KKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+KKExtension.m"; sourceTree = "<group>"; };
+		26D1B4631D34F2F000F596AD /* KKCustomNavigationC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCustomNavigationC.h; sourceTree = "<group>"; };
+		26D1B4641D34F2F000F596AD /* KKCustomNavigationC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCustomNavigationC.m; sourceTree = "<group>"; };
+		26D1B4661D3519CA00F596AD /* KKHPTagViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagViewModel.h; sourceTree = "<group>"; };
+		26D1B4671D3519CA00F596AD /* KKHPTagViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagViewModel.m; sourceTree = "<group>"; };
+		26D1B4691D35429400F596AD /* UIButton+KKHPSearchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KKHPSearchButton.h"; sourceTree = "<group>"; };
+		26D1B46A1D35429400F596AD /* UIButton+KKHPSearchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KKHPSearchButton.m"; sourceTree = "<group>"; };
+		26D1B46C1D3545B500F596AD /* UILabel+KKHPNarTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+KKHPNarTitle.h"; sourceTree = "<group>"; };
+		26D1B46D1D3545B500F596AD /* UILabel+KKHPNarTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+KKHPNarTitle.m"; sourceTree = "<group>"; };
+		26D1B46F1D35D22300F596AD /* UIButton+KKHPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+KKHPExtension.h"; sourceTree = "<group>"; };
+		26D1B4701D35D22300F596AD /* UIButton+KKHPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+KKHPExtension.m"; sourceTree = "<group>"; };
+		26D1B4721D35E1ED00F596AD /* KKHPTagManegerV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagManegerV.h; sourceTree = "<group>"; };
+		26D1B4731D35E1ED00F596AD /* KKHPTagManegerV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagManegerV.m; sourceTree = "<group>"; };
 		26E395481D300E8A0041063E /* KKHPTagsSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagsSView.h; sourceTree = "<group>"; };
 		26E395491D300E8A0041063E /* KKHPTagsSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagsSView.m; sourceTree = "<group>"; };
 		26E3954B1D3011680041063E /* KKHPTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagButton.h; sourceTree = "<group>"; };
 		26E3954C1D3011680041063E /* KKHPTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagButton.m; sourceTree = "<group>"; };
-		26E3954E1D3085C30041063E /* KKHPNewsInfoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKHPNewsInfoCollectionViewCell.xib; sourceTree = "<group>"; };
-		26E395501D31E0700041063E /* KKHPTagsCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPTagsCV.h; sourceTree = "<group>"; };
-		26E395511D31E0700041063E /* KKHPTagsCV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPTagsCV.m; sourceTree = "<group>"; };
 		54856EF4BECC94AACF8E3CB5 /* Pods-DeliveryPoint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryPoint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeliveryPoint/Pods-DeliveryPoint.debug.xcconfig"; sourceTree = "<group>"; };
 		CBF6708FC28323D0A316FABF /* Pods-DeliveryPoint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliveryPoint.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeliveryPoint/Pods-DeliveryPoint.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,9 +201,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2609A5F81D34C77E0057BE7B /* base */ = {
+			isa = PBXGroup;
+			children = (
+				2609A5F11D34C72F0057BE7B /* KKCustomVC.h */,
+				2609A5F21D34C72F0057BE7B /* KKCustomVC.m */,
+				2609A5F41D34C7510057BE7B /* KKCustomVCConstants.h */,
+				2609A5F51D34C7710057BE7B /* KKCustomNavBarV.h */,
+				2609A5F61D34C7710057BE7B /* KKCustomNavBarV.m */,
+				26D1B4631D34F2F000F596AD /* KKCustomNavigationC.h */,
+				26D1B4641D34F2F000F596AD /* KKCustomNavigationC.m */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
 		265733341D2E329300783037 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				26D1B4691D35429400F596AD /* UIButton+KKHPSearchButton.h */,
+				26D1B46A1D35429400F596AD /* UIButton+KKHPSearchButton.m */,
+				26D1B46F1D35D22300F596AD /* UIButton+KKHPExtension.h */,
+				26D1B4701D35D22300F596AD /* UIButton+KKHPExtension.m */,
+				26D1B46C1D3545B500F596AD /* UILabel+KKHPNarTitle.h */,
+				26D1B46D1D3545B500F596AD /* UILabel+KKHPNarTitle.m */,
 			);
 			name = Category;
 			path = Controller/Category;
@@ -290,10 +336,10 @@
 		26627D3A1D2A86D30063D617 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				265733341D2E329300783037 /* Category */,
 				26627D3E1D2A86D30063D617 /* Model */,
 				26627D3F1D2A86D30063D617 /* View */,
 				26627D3B1D2A86D30063D617 /* Controller */,
-				265733341D2E329300783037 /* Category */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -301,10 +347,15 @@
 		26627D3B1D2A86D30063D617 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				26627D3C1D2A86D30063D617 /* KKHomePageViewController.h */,
-				26627D3D1D2A86D30063D617 /* KKHomePageViewController.m */,
-				26C0F8B11D2E9DF900C87950 /* KKHPNewsInfoViewController.h */,
-				26C0F8B21D2E9DF900C87950 /* KKHPNewsInfoViewController.m */,
+				2609A5F81D34C77E0057BE7B /* base */,
+				26627D3C1D2A86D30063D617 /* KKHomePageVC.h */,
+				26627D3D1D2A86D30063D617 /* KKHomePageVC.m */,
+				26C0F8B11D2E9DF900C87950 /* KKHPNewsInfoVC.h */,
+				26C0F8B21D2E9DF900C87950 /* KKHPNewsInfoVC.m */,
+				2609A5EE1D3498B50057BE7B /* KKHPTagsManagerVC.h */,
+				2609A5EF1D3498B50057BE7B /* KKHPTagsManagerVC.m */,
+				26D1B4721D35E1ED00F596AD /* KKHPTagManegerV.h */,
+				26D1B4731D35E1ED00F596AD /* KKHPTagManegerV.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,10 +363,16 @@
 		26627D3E1D2A86D30063D617 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				265733311D2E321100783037 /* KKHPTagDatas.h */,
-				265733321D2E321100783037 /* KKHPTagDatas.m */,
+				265733311D2E321100783037 /* KKHPTagGetData.h */,
+				265733321D2E321100783037 /* KKHPTagGetData.m */,
+				26D1B4661D3519CA00F596AD /* KKHPTagViewModel.h */,
+				26D1B4671D3519CA00F596AD /* KKHPTagViewModel.m */,
 				265733351D2E340700783037 /* KKHPTagsModel.h */,
 				265733361D2E340700783037 /* KKHPTagsModel.m */,
+				261538231D33B88800A6D3E5 /* KKNewsContentModel.h */,
+				261538241D33B88800A6D3E5 /* KKNewsContentModel.m */,
+				26A7CA001D34D9C800C5675E /* KKNewsInfoViewModel.h */,
+				26A7CA011D34D9C800C5675E /* KKNewsInfoViewModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,15 +380,12 @@
 		26627D3F1D2A86D30063D617 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				269BE9A41D2BDB2400E145B2 /* KKHPNavBar.h */,
-				269BE9A51D2BDB2400E145B2 /* KKHPNavBar.m */,
-				26C0F8B71D2F58B300C87950 /* KKHPNewsInfoTableViewCell.h */,
-				26C0F8B81D2F58B300C87950 /* KKHPNewsInfoTableViewCell.m */,
 				26E395481D300E8A0041063E /* KKHPTagsSView.h */,
 				26E395491D300E8A0041063E /* KKHPTagsSView.m */,
 				26E3954B1D3011680041063E /* KKHPTagButton.h */,
 				26E3954C1D3011680041063E /* KKHPTagButton.m */,
-				26E395471D300E430041063E /* bak */,
+				26C0F8B71D2F58B300C87950 /* KKHPNewsInfoTVCell.h */,
+				26C0F8B81D2F58B300C87950 /* KKHPNewsInfoTVCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,12 +474,16 @@
 				26955E6C1D2B6176001F44C9 /* UIColor+KKDayNight.m */,
 				26CC77E91D2CFDDA00533D4D /* NSString+KKDayNight.h */,
 				26CC77EA1D2CFDDA00533D4D /* NSString+KKDayNight.m */,
+				2609A5EB1D3474350057BE7B /* NSString+KKStringUrl.h */,
+				2609A5EC1D3474350057BE7B /* NSString+KKStringUrl.m */,
 				269BE9A11D2BAA3100E145B2 /* UIFont+KKExtension.h */,
 				269BE9A21D2BAA3100E145B2 /* UIFont+KKExtension.m */,
 				269BE9AA1D2BE3E700E145B2 /* UIView+KKExtension.h */,
 				269BE9AB1D2BE3E700E145B2 /* UIView+KKExtension.m */,
 				26CC77EC1D2D238D00533D4D /* UILabel+KKExtension.h */,
 				26CC77ED1D2D238D00533D4D /* UILabel+KKExtension.m */,
+				26A7CA031D34E28C00C5675E /* NSDate+KKExtension.h */,
+				26A7CA041D34E28C00C5675E /* NSDate+KKExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -457,20 +515,6 @@
 			children = (
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		26E395471D300E430041063E /* bak */ = {
-			isa = PBXGroup;
-			children = (
-				26C0F8AE1D2E95A900C87950 /* KKHPTagsLayout.h */,
-				26C0F8AF1D2E95AA00C87950 /* KKHPTagsLayout.m */,
-				26E395501D31E0700041063E /* KKHPTagsCV.h */,
-				26E395511D31E0700041063E /* KKHPTagsCV.m */,
-				26C0F8B41D2EABA500C87950 /* KKHPNewsInfoCollectionViewCell.h */,
-				26C0F8B51D2EABA500C87950 /* KKHPNewsInfoCollectionViewCell.m */,
-				26E3954E1D3085C30041063E /* KKHPNewsInfoCollectionViewCell.xib */,
-			);
-			name = bak;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -583,7 +627,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E3954F1D3085C30041063E /* KKHPNewsInfoCollectionViewCell.xib in Resources */,
 				26627CFC1D2A7F9E0063D617 /* LaunchScreen.storyboard in Resources */,
 				26CC77E51D2CB7A100533D4D /* Test.xib in Resources */,
 				26627CF91D2A7F9E0063D617 /* Assets.xcassets in Resources */,
@@ -662,31 +705,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				265733331D2E321100783037 /* KKHPTagDatas.m in Sources */,
-				26627D521D2A86D30063D617 /* KKHomePageViewController.m in Sources */,
-				26C0F8B91D2F58B300C87950 /* KKHPNewsInfoTableViewCell.m in Sources */,
+				265733331D2E321100783037 /* KKHPTagGetData.m in Sources */,
+				26627D521D2A86D30063D617 /* KKHomePageVC.m in Sources */,
+				261538251D33B88800A6D3E5 /* KKNewsContentModel.m in Sources */,
+				26D1B4711D35D22300F596AD /* UIButton+KKHPExtension.m in Sources */,
+				26C0F8B91D2F58B300C87950 /* KKHPNewsInfoTVCell.m in Sources */,
 				269BE99D1D2B9E2F00E145B2 /* KKConst.m in Sources */,
 				269BE9971D2B9C6700E145B2 /* KKDayNightData.m in Sources */,
-				269BE9A61D2BDB2400E145B2 /* KKHPNavBar.m in Sources */,
+				26A7CA051D34E28C00C5675E /* NSDate+KKExtension.m in Sources */,
 				269BE9AC1D2BE3E700E145B2 /* UIView+KKExtension.m in Sources */,
+				2609A5F01D3498B50057BE7B /* KKHPTagsManagerVC.m in Sources */,
 				26CC77EE1D2D238D00533D4D /* UILabel+KKExtension.m in Sources */,
 				26627CF11D2A7F9E0063D617 /* AppDelegate.m in Sources */,
-				26C0F8B01D2E95AA00C87950 /* KKHPTagsLayout.m in Sources */,
-				26C0F8B61D2EABA500C87950 /* KKHPNewsInfoCollectionViewCell.m in Sources */,
-				26C0F8B31D2E9DF900C87950 /* KKHPNewsInfoViewController.m in Sources */,
+				26C0F8B31D2E9DF900C87950 /* KKHPNewsInfoVC.m in Sources */,
+				26D1B4681D3519CA00F596AD /* KKHPTagViewModel.m in Sources */,
 				26627D511D2A86D30063D617 /* KKDiscoveryViewController.m in Sources */,
 				269BE9A31D2BAA3100E145B2 /* UIFont+KKExtension.m in Sources */,
 				26955E6D1D2B6176001F44C9 /* UIColor+KKDayNight.m in Sources */,
+				26D1B4651D34F2F000F596AD /* KKCustomNavigationC.m in Sources */,
 				269BE99A1D2B9CA400E145B2 /* KKFont.m in Sources */,
 				26E3954D1D3011680041063E /* KKHPTagButton.m in Sources */,
 				26627CEE1D2A7F9E0063D617 /* main.m in Sources */,
 				26E3954A1D300E8A0041063E /* KKHPTagsSView.m in Sources */,
+				2609A5F31D34C72F0057BE7B /* KKCustomVC.m in Sources */,
 				265733371D2E340700783037 /* KKHPTagsModel.m in Sources */,
-				26E395521D31E0700041063E /* KKHPTagsCV.m in Sources */,
 				26627D5A1D2A87670063D617 /* KKMeViewController.m in Sources */,
+				26D1B4741D35E1ED00F596AD /* KKHPTagManegerV.m in Sources */,
 				26627D541D2A86D30063D617 /* KKMainStreamTabBarViewController.m in Sources */,
+				26D1B46E1D3545B500F596AD /* UILabel+KKHPNarTitle.m in Sources */,
+				26A7CA021D34D9C800C5675E /* KKNewsInfoViewModel.m in Sources */,
+				26D1B46B1D35429400F596AD /* UIButton+KKHPSearchButton.m in Sources */,
 				26CC77EB1D2CFDDA00533D4D /* NSString+KKDayNight.m in Sources */,
+				2609A5ED1D3474350057BE7B /* NSString+KKStringUrl.m in Sources */,
 				2657333C1D2E470800783037 /* KKTngouParams.m in Sources */,
+				2609A5F71D34C7710057BE7B /* KKCustomNavBarV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -770,7 +822,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -808,7 +860,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -820,11 +872,15 @@
 			baseConfigurationReference = 54856EF4BECC94AACF8E3CB5 /* Pods-DeliveryPoint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = DeliveryPoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IOS16.DeliveryPoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -833,11 +889,15 @@
 			baseConfigurationReference = CBF6708FC28323D0A316FABF /* Pods-DeliveryPoint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = DeliveryPoint/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = IOS16.DeliveryPoint;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

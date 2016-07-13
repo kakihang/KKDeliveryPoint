@@ -19,6 +19,12 @@
 /** 分类的关键词（网页显示的标题） **/
 @property (nonatomic, strong) NSString *keywords;
 
+// 辅助属性
+/** 类型 **/
+@property (nonatomic, copy) NSString *type;
+/** 分段 **/
+@property (nonatomic, strong) NSString *section;
+
 + (instancetype)tagFirstModel;
 
 @end

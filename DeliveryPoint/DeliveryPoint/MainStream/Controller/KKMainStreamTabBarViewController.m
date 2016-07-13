@@ -9,10 +9,11 @@
 
 
 #import "KKMainStreamTabBarViewController.h"
-#import "KKHomePageViewController.h"
+#import "KKCustomNavigationC.h"
+#import "KKHomePageVC.h"
 #import "KKDiscoveryViewController.h"
 #import "KKMeViewController.h"
-#import "KKHPTagDatas.h"
+#import "KKHPTagGetData.h"
 #import <DKNightVersion.h>
 
 /**
@@ -23,19 +24,13 @@
  */
 
 
-
 @implementation KKMainStreamTabBarViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupTabBar];
-    
-}
-
-- (void)setupTabBar {
-    
-    
+    // 标签数据预处理
+    [KKHPTagGetData kk_HPGetTagDatas];
     
     // 修改tabBar的渲染颜色
     self.tabBar.dk_tintColorPicker = KKColorWithRootkeyColorKey(mainStream, @"tintColor");
@@ -48,29 +43,45 @@
     [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:KKMSTabBarFontSize]} forState:UIControlStateNormal];
     [item setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:KKMSTabBarFontSize]} forState:UIControlStateSelected];
     
-    // 已添加UIView方式,修改tabbar的背景颜色
-    //    UIView *bgView = [[UIView alloc] initWithFrame:self.tabBar.bounds];
-    //    [self.tabBar insertSubview:bgView atIndex:0];
+    // 添加首页子控制器
+    [self setupViewController:[[KKHomePageVC alloc] init]
+                     navTitle:nil
+                  tabBarTitle:@"首页"
+                        image:KKStringWithRootkeyStringKey(mainStream, @"homePageItemImage")
+                selectedImage:KKStringWithRootkeyStringKey(mainStream, @"homePageItemImageClick")];
     
-    [self setupViewController:[[KKHomePageViewController alloc] init] navTitle:nil tabBarTitle:@"首页" image:KKStringWithRootkeyStringKey(mainStream, @"homePageItemImage") selectedImage:KKStringWithRootkeyStringKey(mainStream, @"homePageItemImageClick")];
+    // 添加发现子控制器
+    [self setupViewController:[[KKDiscoveryViewController alloc] init]
+                     navTitle:@"发现" tabBarTitle:@"发现"
+                        image:KKStringWithRootkeyStringKey(mainStream, @"disconverItemImage")
+                selectedImage:KKStringWithRootkeyStringKey(mainStream, @"disconverItemImageClick")];
     
-    [self setupViewController:[[KKDiscoveryViewController alloc] init] navTitle:@"发现" tabBarTitle:@"发现" image:KKStringWithRootkeyStringKey(mainStream, @"disconverItemImage") selectedImage:KKStringWithRootkeyStringKey(mainStream, @"disconverItemImageClick")];
-    
-    [self setupViewController:[[KKMeViewController alloc] init] navTitle:@"我" tabBarTitle:@"我" image:KKStringWithRootkeyStringKey(mainStream, @"meItemImage") selectedImage:KKStringWithRootkeyStringKey(mainStream, @"meItemImageClick")];
-    
+    // 添加我子控制器
+    [self setupViewController:[[KKMeViewController alloc] init]
+                     navTitle:@"我" tabBarTitle:@"我"
+                        image:KKStringWithRootkeyStringKey(mainStream, @"meItemImage")
+                selectedImage:KKStringWithRootkeyStringKey(mainStream, @"meItemImageClick")];
 }
 
-- (void)setupViewController:(UIViewController *)viewController navTitle:(NSString *)navTitle tabBarTitle:(NSString *)tabBarTitle image:(NSString *)image selectedImage:(NSString *)selectedImage {
+- (void)setupViewController:(KKCustomVC *)viewController
+                   navTitle:(NSString *)navTitle
+                tabBarTitle:(NSString *)tabBarTitle
+                      image:(NSString *)image
+              selectedImage:(NSString *)selectedImage {
     
-    viewController.navigationItem.title = navTitle;
+    /** 统一设置子控制器底色、导航栏颜色 **/
+    // 如有特殊需求请求具体子控制器内修改
+    viewController.view.dk_backgroundColorPicker = KKColorWithRootkeyColorKey(homePage, @"homeViewBgColorDefault");
+    viewController.navbar.dk_backgroundColorPicker = KKColorWithRootkeyColorKey(homePage, @"homeTabBarbgColor");
     
+    KKCustomNavigationC *nav = [[KKCustomNavigationC alloc] initWithRootViewController:viewController];
+    
+    [viewController setNavBarTitle:navTitle];
     viewController.tabBarItem.title = tabBarTitle;
     viewController.tabBarItem.image = [UIImage imageNamed:image];
     viewController.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     
-    // 导航啦
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
-    
+    // 添加子控制器
     [self addChildViewController:nav];
 }
 

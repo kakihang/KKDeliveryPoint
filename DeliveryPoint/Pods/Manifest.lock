@@ -29,6 +29,8 @@ PODS:
     - DKNightVersion/Core
   - Masonry (1.0.1)
   - MJExtension (3.0.11)
+  - MJRefresh (3.1.9)
+  - pop (1.0.9)
   - SDAutoLayout (2.1.2)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
@@ -40,6 +42,8 @@ DEPENDENCIES:
   - DKNightVersion (= 2.3.1)
   - Masonry (= 1.0.1)
   - MJExtension (= 3.0.11)
+  - MJRefresh (= 3.1.9)
+  - pop
   - SDAutoLayout (= 2.1.2)
   - SDWebImage (= 3.8.1)
   - SVProgressHUD (= 2.0.3)
@@ -49,10 +53,12 @@ SPEC CHECKSUMS:
   DKNightVersion: a777bb22a9a68837d89ddd724e1fcaf65581dde4
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJExtension: f9ae6ddc0f1c482c3c9af750280ccebd14381958
+  MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDAutoLayout: 4910758003bbb043003700915b00f53fbc2bf512
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: 8b22236870858fb8fb7cc319481ee26f9274c201
+PODFILE CHECKSUM: 205cb34e9a8b64055ccd706ea9f0f66d5166c16a
 
 COCOAPODS: 1.0.1

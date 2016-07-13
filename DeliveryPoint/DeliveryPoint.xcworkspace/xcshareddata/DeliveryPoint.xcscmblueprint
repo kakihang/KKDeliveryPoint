@@ -1,14 +1,16 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "61223C40F6C158415BF75DC0216596645E1C7F4C",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0B55759EC39E24E90120E82BCF89D140D83C368D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0B55759EC39E24E90120E82BCF89D140D83C368D" : 0,
     "61223C40F6C158415BF75DC0216596645E1C7F4C" : 0,
     "3AD81949D415F1E61545F331089138100896A22A" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B8B92331-D833-4349-A519-AA18F020C62C",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0B55759EC39E24E90120E82BCF89D140D83C368D" : "KKDeliveryPoint\/",
     "61223C40F6C158415BF75DC0216596645E1C7F4C" : "DeliveryPoint\/",
     "3AD81949D415F1E61545F331089138100896A22A" : ""
   },
@@ -16,6 +18,11 @@
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DeliveryPoint\/DeliveryPoint.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kakihang\/KKDeliveryPoint.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0B55759EC39E24E90120E82BCF89D140D83C368D"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kakihang\/firstcode.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
