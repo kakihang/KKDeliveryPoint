@@ -36,6 +36,10 @@
 		26A7CA021D34D9C800C5675E /* KKNewsInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A7CA011D34D9C800C5675E /* KKNewsInfoViewModel.m */; };
 		26A7CA051D34E28C00C5675E /* NSDate+KKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A7CA041D34E28C00C5675E /* NSDate+KKExtension.m */; };
 		26B29A331D2AB1020015EC34 /* ImageColor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26B29A321D2AB1020015EC34 /* ImageColor.plist */; };
+		26B37DE81D3634F50059C6AB /* KKShareData.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B37DE71D3634F50059C6AB /* KKShareData.m */; };
+		26B37DEB1D363BA10059C6AB /* KKFontSizeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B37DEA1D363BA10059C6AB /* KKFontSizeManager.m */; };
+		26B37DEF1D3644B30059C6AB /* UILabel+KKFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B37DEE1D3644B30059C6AB /* UILabel+KKFont.m */; };
+		26B37DF21D36522F0059C6AB /* NSObject+KKFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B37DF11D36522F0059C6AB /* NSObject+KKFont.m */; };
 		26C0F8B31D2E9DF900C87950 /* KKHPNewsInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0F8B21D2E9DF900C87950 /* KKHPNewsInfoVC.m */; };
 		26C0F8B91D2F58B300C87950 /* KKHPNewsInfoTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C0F8B81D2F58B300C87950 /* KKHPNewsInfoTVCell.m */; };
 		26CC77E51D2CB7A100533D4D /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26CC77E41D2CB7A100533D4D /* Test.xib */; };
@@ -129,6 +133,14 @@
 		26A7CA041D34E28C00C5675E /* NSDate+KKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+KKExtension.m"; sourceTree = "<group>"; };
 		26B29A2E1D2A9ACE0015EC34 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		26B29A321D2AB1020015EC34 /* ImageColor.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ImageColor.plist; sourceTree = "<group>"; };
+		26B37DE61D3634F50059C6AB /* KKShareData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKShareData.h; sourceTree = "<group>"; };
+		26B37DE71D3634F50059C6AB /* KKShareData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKShareData.m; sourceTree = "<group>"; };
+		26B37DE91D363BA10059C6AB /* KKFontSizeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKFontSizeManager.h; sourceTree = "<group>"; };
+		26B37DEA1D363BA10059C6AB /* KKFontSizeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKFontSizeManager.m; sourceTree = "<group>"; };
+		26B37DED1D3644B30059C6AB /* UILabel+KKFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+KKFont.h"; sourceTree = "<group>"; };
+		26B37DEE1D3644B30059C6AB /* UILabel+KKFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+KKFont.m"; sourceTree = "<group>"; };
+		26B37DF01D36522F0059C6AB /* NSObject+KKFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KKFont.h"; sourceTree = "<group>"; };
+		26B37DF11D36522F0059C6AB /* NSObject+KKFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KKFont.m"; sourceTree = "<group>"; };
 		26C0F8B11D2E9DF900C87950 /* KKHPNewsInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPNewsInfoVC.h; sourceTree = "<group>"; };
 		26C0F8B21D2E9DF900C87950 /* KKHPNewsInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHPNewsInfoVC.m; sourceTree = "<group>"; };
 		26C0F8B71D2F58B300C87950 /* KKHPNewsInfoTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHPNewsInfoTVCell.h; sourceTree = "<group>"; };
@@ -412,6 +424,9 @@
 		26627D461D2A86D30063D617 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				26B37DE61D3634F50059C6AB /* KKShareData.h */,
+				26B37DE71D3634F50059C6AB /* KKShareData.m */,
+				26B37DF31D3673380059C6AB /* KKFontSizeManager */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -515,6 +530,19 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		26B37DF31D3673380059C6AB /* KKFontSizeManager */ = {
+			isa = PBXGroup;
+			children = (
+				26B37DE91D363BA10059C6AB /* KKFontSizeManager.h */,
+				26B37DEA1D363BA10059C6AB /* KKFontSizeManager.m */,
+				26B37DED1D3644B30059C6AB /* UILabel+KKFont.h */,
+				26B37DEE1D3644B30059C6AB /* UILabel+KKFont.m */,
+				26B37DF01D36522F0059C6AB /* NSObject+KKFont.h */,
+				26B37DF11D36522F0059C6AB /* NSObject+KKFont.m */,
+			);
+			name = KKFontSizeManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -705,6 +733,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B37DEF1D3644B30059C6AB /* UILabel+KKFont.m in Sources */,
 				265733331D2E321100783037 /* KKHPTagGetData.m in Sources */,
 				26627D521D2A86D30063D617 /* KKHomePageVC.m in Sources */,
 				261538251D33B88800A6D3E5 /* KKNewsContentModel.m in Sources */,
@@ -713,6 +742,7 @@
 				269BE99D1D2B9E2F00E145B2 /* KKConst.m in Sources */,
 				269BE9971D2B9C6700E145B2 /* KKDayNightData.m in Sources */,
 				26A7CA051D34E28C00C5675E /* NSDate+KKExtension.m in Sources */,
+				26B37DEB1D363BA10059C6AB /* KKFontSizeManager.m in Sources */,
 				269BE9AC1D2BE3E700E145B2 /* UIView+KKExtension.m in Sources */,
 				2609A5F01D3498B50057BE7B /* KKHPTagsManagerVC.m in Sources */,
 				26CC77EE1D2D238D00533D4D /* UILabel+KKExtension.m in Sources */,
@@ -725,6 +755,7 @@
 				26D1B4651D34F2F000F596AD /* KKCustomNavigationC.m in Sources */,
 				269BE99A1D2B9CA400E145B2 /* KKFont.m in Sources */,
 				26E3954D1D3011680041063E /* KKHPTagButton.m in Sources */,
+				26B37DF21D36522F0059C6AB /* NSObject+KKFont.m in Sources */,
 				26627CEE1D2A7F9E0063D617 /* main.m in Sources */,
 				26E3954A1D300E8A0041063E /* KKHPTagsSView.m in Sources */,
 				2609A5F31D34C72F0057BE7B /* KKCustomVC.m in Sources */,
@@ -738,6 +769,7 @@
 				26CC77EB1D2CFDDA00533D4D /* NSString+KKDayNight.m in Sources */,
 				2609A5ED1D3474350057BE7B /* NSString+KKStringUrl.m in Sources */,
 				2657333C1D2E470800783037 /* KKTngouParams.m in Sources */,
+				26B37DE81D3634F50059C6AB /* KKShareData.m in Sources */,
 				2609A5F71D34C7710057BE7B /* KKCustomNavBarV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
